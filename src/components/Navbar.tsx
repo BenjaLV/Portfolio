@@ -5,13 +5,13 @@ import { useRouter } from 'next/router';
 import { GitHubIcon, LinkedInIcon } from './Icons';
 import { motion } from 'framer-motion'
 
-interface CustomLinkProps {
+interface Props {
   href: string;
   title: string;
   className?: string;
 }
 
-const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = '' }) => {
+const CustomLink: React.FC<Props> = ({ href, title, className = '' }) => {
 
   const router = useRouter()
 
@@ -25,7 +25,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = '' }) 
   );
 };
 
-function Navbar() {
+const Navbar = () => {
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
       <nav className='flex items-center space-x-4'>
@@ -35,10 +35,10 @@ function Navbar() {
       </nav>
       <nav className='flex items-center space-x-4'>
         <motion.a href="https://github.com/BenjaLV" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-          <GitHubIcon className='w-6 h-6' />
+          <GitHubIcon className='w-8 h-8' />
         </motion.a>
         <motion.a href="https://www.linkedin.com/in/benjam%C3%ADn-la-valla-826ba7245" target={"_blank"} whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-          <LinkedInIcon className='w-6 h-6' />
+          <LinkedInIcon className='w-8 h-8' />
         </motion.a>
       </nav>
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
