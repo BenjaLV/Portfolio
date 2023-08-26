@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import logoPicture from '../../public/profile-logo.png';
+import logoPicture from '../../public/images/profile-logo.png';
 const MotionLink = motion(Link);
 
 const Logo = () => {
@@ -31,9 +31,6 @@ const Logo = () => {
                 <motion.div
                     className='w-16 h-16 bg-dark text-ligth flex items-center justify-center rounded-full text-2xl font-bold'
                     style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
                         position: 'relative'
                     }}
                     whileHover={{
@@ -48,9 +45,7 @@ const Logo = () => {
                         initial={{ opacity: 1 }}
                         animate={{ opacity: isHovered ? 0 : 1 }}
                         transition={{ duration: 0.3 }}
-                        style={{
-                            position: 'absolute'
-                        }}
+                        className='absolute'
                     >
                         <Image src={logoPicture} alt="Logo" width={64} height={64} />
                     </motion.div>
@@ -58,14 +53,7 @@ const Logo = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: isHovered ? 1 : 0 }}
                         transition={{ duration: 0.3 }}
-                        style={{
-                            position: 'absolute',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: '100%',
-                            height: '100%'
-                        }}
+                        className='absolute flex items-center justify-center w-full h-full'
                     >
                         BLV
                     </motion.div>
