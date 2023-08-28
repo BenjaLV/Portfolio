@@ -10,7 +10,7 @@ const Footer = () => {
                     <span>Build by&nbsp;</span>
                     <Link href="https://github.com/BenjaLV" target='_blank' className='underline underline-offset-2'>Benjamín La Valla</Link>
                 </div>
-                <span>{new Date().getFullYear()} Copyright &copy; All Rights Reserved.</span>
+                <span>Copyright &copy; {new Date().getFullYear()} All Rights Reserved.</span>
             </Layout>
         </footer>
     );

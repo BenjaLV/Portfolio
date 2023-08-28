@@ -1,3 +1,4 @@
+import { animate, animations } from 'framer-motion'
 import type { Config } from 'tailwindcss'
 
 const { fontFamily } = require('tailwindcss/defaultTheme')
@@ -18,6 +19,9 @@ const config: Config = {
         ligth: "#f5f5f5",
         primary: "#B63E96",
         primaryDark: "#58E6D9"
+      },
+      animation: {
+        'spin-slow': 'spin 30s linear infinite'
       }
     },
   },

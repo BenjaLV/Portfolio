@@ -4,17 +4,18 @@ import Image from "next/image"
 import profilePicture from "../../public/images/color-redondo.png"
 import AnimatedText from "@/components/AnimatedText"
 import Link from "next/link"
-import { ExternalLink } from "@/components"
-import FullStackDeveloper from "@/components/FullStackDeveloper"
+import { ExternalLink, FullStackDeveloperIcon } from "@/components"
+import About from "@/components/About"
 
 export default function Home() {
   return (
     <>
-      <main className='flex item-center text-dark w-full min-h-screen'>
+      <main id="home" className='flex item-center text-dark w-full min-h-screen'>
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
               <div className="relative">
+                <FullStackDeveloperIcon className='animate-spin-slow' style={{ color: "black", position: "absolute", top: 4, left: -4 }} />
                 <Image src={profilePicture} alt="BenjaLaValla" className="w-full h-auto" style={{ overflow: "hidden", border: 2 }} />
               </div>
             </div>
@@ -29,6 +30,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <About />
         </Layout>
       </main>
     </>

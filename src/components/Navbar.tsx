@@ -11,35 +11,36 @@ interface Props {
   className?: string;
 }
 
-const CustomLink = ({ href, title, className = '' }: Props) => {
-  const router = useRouter();
+// const CustomLink = ({ href, title, className = '' }: Props) => {
+//   const router = useRouter();
+//   const isActive = router.asPath === href;
 
-  return (
-    <Link legacyBehavior href={href}>
-      <a
-        className={`relative-group ${className} inline-block`}
-        style={{ marginRight: '1rem' }} // Espacio entre CustomLinks
-      >
-        {title}
-        <span
-          className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full group-hover:bg-dark transition-[width] ease duration-300 ${
-            router.asPath === href ? 'w-full' : 'w-0'
-          }`}
-        >
-          &nbsp;
-        </span>
-      </a>
-    </Link>
-  );
-};
+//   return (
+//     <Link legacyBehavior href={href}>
+//       <a
+//         className={`relative inline-block ${className}`}
+//         style={{ marginRight: '1rem' }}
+//       >
+//         {title}
+//         <span
+//           className={`h-[1px] absolute left-0 -bottom-1 bg-dark transition-transform transform ${
+//             isActive ? 'w-full scale-x-100' : 'w-0 scale-x-0'
+//           }`}
+//         >
+//           &nbsp;
+//         </span>
+//       </a>
+//     </Link>
+//   );
+// };
 
 const Navbar = () => {
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
       <nav className='flex items-center space-x-4'>
-        <CustomLink href="/" title="Home" />
-        <CustomLink href="/about" title="About" />
-        <CustomLink href="/projects" title="Projects" />
+        <a href="#home" title="Home">Home</a>
+        <a href='#about'>About</a>
+        <a href="#projects">Projects</a>
       </nav>
       <nav className='flex items-center space-x-4'>
         <motion.a
