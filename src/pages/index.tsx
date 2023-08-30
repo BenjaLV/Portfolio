@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <>
       <Main />
-      <div className="mb-8" />
       <About />
       <Technologies />
       <Projects />

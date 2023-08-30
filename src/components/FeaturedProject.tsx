@@ -13,7 +13,7 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <article className="relative">
+        <article className="relative mb-8 md:mb-16">
             <Link href={link} target={'_blank'}>
                 <Image
                     src={img}
@@ -25,14 +25,14 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
                     onMouseLeave={() => setIsHovered(false)}
                 />
             </Link>
-            <div className="absolute inset-0 flex items-center justify-center bg-blue-500 bg-opacity-75 rounded-full opacity-0 transition-opacity duration-300 hover:opacity-100 ">
-                <p className="text-white text-center">{summary}</p>
-                
-            </div>
-            <div className="absolute inset-x-0 top-0 flex items-center justify-center w-full">
-                <Link href={link} target={'_blank'}>
-                    <h2 className="text-lg font-bold text-black hover:underline">{title}</h2>
-                </Link>
+
+            <Link href={link} target={'_blank'}>
+                <div className="absolute inset-0 flex items-center justify-center bg-blue-500 bg-opacity-75 rounded-full opacity-0 transition-opacity duration-300 hover:opacity-100 md:ml-4">
+                    <p className="text-white text-center">{summary}</p>
+                </div>
+            </Link>
+            <div className="absolute inset-x-0 bottom-[-1] flex items-center justify-center w-full md:mt-2">
+                <h2 className="text-lg font-bold text-black">{title}</h2>
             </div>
         </article>
     );

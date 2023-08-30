@@ -10,8 +10,8 @@ const Projects = () => {
                 <div className="mb-8">
                     <AnimatedText text="Imagination Trumps Knowledge!" />
                 </div>
-                <div className="grid grid-cols-12 gap-6 md:gap-12">
-                    <div className="col-span-12 md:col-span-6 mb-8 md:mb-0">
+                <div className="grid grid-cols-12 gap-10 md:gap-12">
+                    <div className="col-span-12 md:col-span-6 mb-10 md:mb-0">
                         <FeaturedProject
                             title="CEIBO-APP"
                             img="/images/all-devices-ceibo.png"
@@ -19,7 +19,7 @@ const Projects = () => {
                             link="https://github.com/BenjaLV/CEIBO-APP"
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 mb-8">
+                    <div className="col-span-12 md:col-span-6 mb-10 md:mb-0">
                         <FeaturedProject
                             title="PokemonApp"
                             img="/images/pokemon-desktop-2.png"
@@ -27,7 +27,7 @@ const Projects = () => {
                             link='https://github.com/BenjaLV/pokemonStaticApp'
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 mb-8">
+                    <div className="col-span-12 md:col-span-6 mb-10">
                         <FeaturedProject
                             title="MovieApp"
                             img="/images/movie-app-all-devices.png"
