@@ -21,7 +21,7 @@ const Skills = ({ name, x, y }: Props) => {
 const Technologies = () => {
     return (
         <Layout>
-            <h2 id='technologies' className='font-bold text-8xl mt-64 w-full text-center dark:text-ligth'>Technologies</h2>
+            <h2 id='technologies' className='font-bold text-8xl w-full text-center dark:text-ligth -mt-20'>Technologies</h2>
             <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLigth dark:bg-circularDark'>
                 <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-ligth p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-ligth ' whileHover={{ scale: 1.05 }}>
                     Web
