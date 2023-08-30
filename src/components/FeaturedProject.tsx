@@ -32,7 +32,7 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
                 </div>
             </Link>
             <div className="absolute inset-x-0 bottom-[-1] flex items-center justify-center w-full md:mt-2">
-                <h2 className="text-lg font-bold text-black">{title}</h2>
+                <h2 className="text-lg font-bold text-black dark:text-ligth">{title}</h2>
             </div>
         </article>
     );

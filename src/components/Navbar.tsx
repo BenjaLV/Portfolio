@@ -33,7 +33,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", height: "82px", background: mode === "dark" ? "#1a1a1a" : "white", zIndex: 100 }}>
+    <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", height: "82px", background: mode === "dark" ? "#3333" : "white", zIndex: 100 }}>
       <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
         <nav className='flex items-center space-x-4'>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <GitHubIcon className='w-8 h-8' />
+            <GitHubIcon className='w-8 h-8' mode={mode} />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/benjam%C3%ADn-la-valla-826ba7245"

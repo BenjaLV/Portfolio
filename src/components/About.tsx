@@ -17,11 +17,11 @@ const About = () => {
 
     return (
         <Layout className='pt-1'>
-            <main id='about' className='flex w-full flex-col items-center justify-center' style={{ paddingTop: "100px" }}>
+            <main id='about' className='flex w-full flex-col items-center justify-center dark:text-ligth' style={{ paddingTop: "100px" }}>
                 <AnimatedText text='Passion Fuels Purpose' className='mb-16' />
                 <div className='grid w-full grid-cols-8 gap-16'>
                     <div className='col-span-3 flex flex-col items-center justify-start'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-ligth/75'>Biography</h2>
                         <p className='font-medium'>
                             I am a passionate and dedicated full-stack developer with a love for creating innovative web applications that bring ideas to life. My journey in the world of programming began when I discovered my fascination with technology and its ability to transform concepts into reality.
                         </p>
