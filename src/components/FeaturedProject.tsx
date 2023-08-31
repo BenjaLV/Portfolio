@@ -27,7 +27,7 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
             </Link>
 
             <Link href={link} target={'_blank'}>
-                <div className="absolute inset-0 flex items-center justify-center bg-blue-500 bg-opacity-75 rounded-full opacity-0 transition-opacity duration-300 hover:opacity-100 md:ml-4">
+                <div className="absolute inset-0 flex items-center justify-center bg-primary bg-opacity-75 dark:bg-secondary dark:bg-opacity-75 rounded-full opacity-0 transition-opacity duration-300 hover:opacity-100 md:ml-4">
                     <p className="text-white text-center">{summary}</p>
                 </div>
             </Link>
