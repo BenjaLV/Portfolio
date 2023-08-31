@@ -1,5 +1,6 @@
-import React from 'react'
-import { animate, motion } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface Props {
     text: string;
@@ -13,7 +14,6 @@ const quote = {
     animate: {
         opacity: 1,
         transition: {
-            delay: 0.5,
             staggerChildren: 0.08,
         }
     }
@@ -33,14 +33,19 @@ const singleWord = {
     }
 }
 
-
 const AnimatedText = ({ text, className = '' }: Props) => {
+
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0.5
+    });
+
     return (
-        <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden dark:text-ligth'>
+        <div ref={ref} className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden dark:text-ligth'>
             <motion.h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-ligth ${className}`}
                 variants={quote}
                 initial="initial"
-                animate="animate"
+                animate={inView ? "animate" : "initial"}
             >
                 {
                     text.split(" ").map((word, index) =>

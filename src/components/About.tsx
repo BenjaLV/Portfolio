@@ -3,17 +3,30 @@ import AnimatedText from "@/components/AnimatedText";
 import aboutPicture from '../../public/images/about-BW-Slash7.jpg';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [isInView, setIsInView] = useState(false);
 
     const imageStyle = {
         borderRadius: 32,
         overflow: 'hidden',
-        transform: `rotate(${isHovered ? 0 : 10}deg)`,
+        transform: `rotate(${isHovered ? 0 : (isInView ? 10 : 0)}deg)`,
         transition: 'transform 0.3s ease-in-out',
         cursor: 'pointer'
     };
+
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0.5
+    });
+
+    if (inView && !isInView) {
+        setIsInView(true);
+    } else if (!inView && isInView) {
+        setIsInView(false);
+    }
 
     return (
         <Layout className='pt-1'>
@@ -40,6 +53,7 @@ const About = () => {
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                                 style={imageStyle}
+                                ref={ref}
                             />
                         </div>
                     </div>
