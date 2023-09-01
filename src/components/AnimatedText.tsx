@@ -42,7 +42,7 @@ const AnimatedText = ({ text, className = '' }: Props) => {
 
     return (
         <div ref={ref} className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden dark:text-ligth sm:py-0'>
-            <motion.h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-ligth ${className}`}
+            <motion.h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-ligth xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl ${className}`}
                 variants={quote}
                 initial="initial"
                 animate={inView ? "animate" : "initial"}

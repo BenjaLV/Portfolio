@@ -31,9 +31,9 @@ const About = () => {
     return (
         <Layout className='pt-1'>
             <main id='about' className='flex w-full flex-col items-center justify-center dark:text-ligth' style={{ paddingTop: "100px" }}>
-                <AnimatedText text='Passion Fuels Purpose' className='mb-16 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
-                <div className='grid w-full grid-cols-8 gap-16'>
-                    <div className='col-span-3 flex flex-col items-center justify-start'>
+                <AnimatedText text='Passion Fuels Purpose' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+                <div className='grid w-full grid-cols-8 gap-16 '>
+                    <div className='col-span-3 flex flex-col items-center justify-start xl:col-span-4 md:order-2 md:col-span-7 md:ml-6'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-ligth/75'>Biography</h2>
                         <p className='font-medium'>
                             I am a passionate and dedicated full-stack developer with a love for creating innovative web applications that bring ideas to life. My journey in the world of programming began when I discovered my fascination with technology and its ability to transform concepts into reality.
@@ -45,7 +45,7 @@ const About = () => {
                             When I'm not coding, you can find me exploring new technologies, working on personal projects, and collaborating with fellow developers. My mission is to continue growing and contributing to the tech community while pushing the boundaries of what's possible in web development.
                         </p>
                     </div>
-                    <div className='col-span-4 flex justify-center items-center'>
+                    <div className='col-span-4 flex justify-center items-center xl:col-span-4 md:order-1 md:col-span-7'>
                         <div style={{ marginLeft: '20px' }}>
                             <Image
                                 src={aboutPicture}

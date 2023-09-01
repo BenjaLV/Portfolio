@@ -8,7 +8,7 @@ const Projects = () => {
         <Layout className="pt-16">
             <main id='projects' className="w-full mb-16 flex flex-col items-center justify-center mt-12">
                 <div className="mb-8">
-                    <AnimatedText text="Imagination Trumps Knowledge!" />
+                    <AnimatedText text="Imagination Trumps Knowledge!" className='lg:!text-7xl sm:!text-6xl xs:!text-4xl' />
                 </div>
                 <div className="grid grid-cols-12 gap-10 md:gap-12">
                     <div className="col-span-12 md:col-span-6 mb-10 md:mb-0">
