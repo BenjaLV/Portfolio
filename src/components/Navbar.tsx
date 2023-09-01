@@ -27,12 +27,12 @@ const NavigationLink = ({ href, text, mode }: Props) => (
 const NavigationMobileLink = ({ href, text, mode, toggle }: Props) => (
   <motion.a
     href={href}
-    style={{ color: mode === "dark" ? "white" : "black" }}
     whileHover={{ y: -2 }}
     whileTap={{ scale: 0.9 }}
     onClick={() => {
       toggle();
     }}
+    className='my-2 text-ligth dark:text-dark'
   >
     {text}
   </motion.a>
@@ -98,7 +98,10 @@ const Navbar = () => {
         {
           isOpen ?
 
-            <div className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 bg-dark/75 dark:bg-ligth/75 rounded-lg backdrop-blur-md py-32'>
+            <motion.div
+              initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+              animate={{ scale: 1, opacity: 1, transition:{2:2} }}
+              className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 bg-dark/60 dark:bg-ligth/75 rounded-lg backdrop-blur-md py-32'>
               <nav className='flex items-center flex-col justify-center'>
                 <NavigationMobileLink href="#home" text="Home" mode={mode} toggle={handleClick} />
                 <NavigationMobileLink href="#about" text="About" mode={mode} toggle={handleClick} />
@@ -112,14 +115,16 @@ const Navbar = () => {
                   target='_blank'
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
+                  className='sm:mx-1'
                 >
-                  <GitHubIcon className='w-8 h-8' mode={mode} />
+                  <GitHubIcon className='w-8 h-8 bg-ligth dark:bg-dark rounded-full' mode={mode} />
                 </motion.a>
                 <motion.a
                   href="https://www.linkedin.com/in/benjam%C3%ADn-la-valla-826ba7245"
                   target='_blank'
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
+                  className='sm:mx-1'
                 >
                   <LinkedInIcon className='w-8 h-8' />
                 </motion.a>
@@ -127,8 +132,8 @@ const Navbar = () => {
                   {mode === 'dark' ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
                 </button>
               </nav>
-            </div>
-            
+            </motion.div>
+
             : null
         }
 
