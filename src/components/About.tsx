@@ -31,7 +31,7 @@ const About = () => {
     return (
         <Layout className='pt-1'>
             <main id='about' className='flex w-full flex-col items-center justify-center dark:text-ligth' style={{ paddingTop: "100px" }}>
-                <AnimatedText text='Passion Fuels Purpose' className='mb-16' />
+                <AnimatedText text='Passion Fuels Purpose' className='mb-16 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
                 <div className='grid w-full grid-cols-8 gap-16'>
                     <div className='col-span-3 flex flex-col items-center justify-start'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-ligth/75'>Biography</h2>

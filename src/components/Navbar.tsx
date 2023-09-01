@@ -56,15 +56,15 @@ const Navbar = () => {
 
   return (
     <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", height: "82px", background: mode === "dark" ? "#3333" : "white", zIndex: 100 }}>
-      <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative'>
+      <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative z-10 lg:px-16 md:px-12 sm:px-8'>
 
-        <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
+        <button className='flex-col justify-center items-center hidden lg:hidden md:block sm:block xs:block' onClick={handleClick}>
           <span className={`bg-dark dark:bg-ligth block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
           <span className={`bg-dark dark:bg-ligth block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
           <span className={`bg-dark dark:bg-ligth block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
         </button>
 
-        <div className='w-full flex justify-between items-center lg:hidden'>
+        <div className='w-full flex justify-between items-center md:hidden sm:hidden xs:hidden'>
           <nav className='flex items-center space-x-4'>
             <NavigationLink href="#home" text="Home" mode={mode} toggle={handleClick} />
             <NavigationLink href="#about" text="About" mode={mode} toggle={handleClick} />

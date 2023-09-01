@@ -10,10 +10,10 @@ export default function Main() {
     <Layout className='pt-0 md:pt-16 sm:pt-8'>
       <div id="home" className="flex items-center justify-between w-full text-dark dark:text-ligth mt-10">
         <div className="relative w-1/2">
-          <FullStackDeveloperIcon className='animate-spin-slow fill-dark dark:fill-ligth' style={{ position: "absolute", top: -55, left: -2, zIndex: 1 }} />
-          <Image src={profilePicture} alt="BenjaLaValla" className="w-4/5 h-auto rounded-full mx-auto lg:hidden md:inline-block md:w-full " style={{ overflow: "hidden", border: 2, zIndex: 0 }} priority />
+          <FullStackDeveloperIcon className='animate-spin-slow fill-dark dark:fill-ligth md:hidden' style={{ position: "absolute", top: -55, left: -2, zIndex: 1 }} />
+          <Image src={profilePicture} alt="BenjaLaValla" className="w-4/5 h-auto rounded-full mx-auto md:inline-block md:w-full" style={{ overflow: "hidden", border: 2, zIndex: 0 }} priority />
         </div>
-        <div className="w-1/2 flex flex-col items-center self-center pl-8">
+        <div className="w-1/2 flex flex-col items-center self-center pl-8 lg:flex-col">
           <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl" />
           <p className="my-4 text-base font-medium">
             As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my work and experience.
