@@ -54,6 +54,7 @@ const About = () => {
                                 onMouseLeave={() => setIsHovered(false)}
                                 style={imageStyle}
                                 ref={ref}
+                                priority
                             />
                         </div>
                     </div>

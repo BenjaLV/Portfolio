@@ -47,7 +47,7 @@ const Logo = () => {
                         transition={{ duration: 0.3 }}
                         className='absolute'
                     >
-                        <Image src={logoPicture} alt="Logo" width={64} height={64} />
+                        <Image src={logoPicture} alt="Logo" width={64} height={64} priority />
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0 }}

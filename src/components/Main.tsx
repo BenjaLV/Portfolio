@@ -4,15 +4,14 @@ import profilePicture from "../../public/images/draw_bg_black.png"
 import AnimatedText from "@/components/AnimatedText"
 import Link from "next/link"
 import { ExternalLink, FullStackDeveloperIcon } from "@/components"
-import whiteProfilePicture from '../../public/images/profile_draw_bg_white.png'
 
 export default function Main() {
   return (
     <Layout className='pt-52'>
-      <div className="flex items-center justify-between w-full text-dark dark:text-ligth">
+      <div id="home" className="flex items-center justify-between w-full text-dark dark:text-ligth mt-10">
         <div className="relative w-1/2">
           <FullStackDeveloperIcon className='animate-spin-slow fill-dark dark:fill-ligth' style={{ position: "absolute", top: -55, left: -2, zIndex: 1 }} />
-          <Image src={profilePicture} alt="BenjaLaValla" className="w-4/5 h-auto rounded-full mx-auto" style={{ overflow: "hidden", border: 2, zIndex: 0 }} />
+          <Image src={profilePicture} alt="BenjaLaValla" className="w-4/5 h-auto rounded-full mx-auto" style={{ overflow: "hidden", border: 2, zIndex: 0 }} priority />
         </div>
         <div className="w-1/2 flex flex-col items-center self-center pl-8">
           <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left" />

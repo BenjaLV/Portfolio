@@ -19,7 +19,6 @@ const config: Config = {
         ligth: "#f5f5f5",
         primary: "#3840B0",
         secondary: "#FF00BF",
-        
       },
       animation: {
         "spin-slow": "spin 30s linear infinite",
@@ -30,6 +29,14 @@ const config: Config = {
         circularDark:
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 5px, #1b1b1b 100px);",
       },
+    },
+    screens: {
+      xs: { max: "639px" },
+      sm: { min: "640px", max: "767px" },
+      md: { min: "768px", max: "1023px" },
+      lg: { min: "1024px", max: "1279px" },
+      xl: { min: "1280px", max: "1535px" },
+      "2xl": { min: "1536px" },
     },
   },
   plugins: [],

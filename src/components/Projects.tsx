@@ -6,7 +6,7 @@ import FeaturedProject from './FeaturedProject';
 const Projects = () => {
     return (
         <Layout className="pt-16">
-            <main id='projects' className="w-full mb-16 flex flex-col items-center justify-center">
+            <main id='projects' className="w-full mb-16 flex flex-col items-center justify-center mt-12">
                 <div className="mb-8">
                     <AnimatedText text="Imagination Trumps Knowledge!" />
                 </div>
