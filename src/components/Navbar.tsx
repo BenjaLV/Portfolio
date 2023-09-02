@@ -55,7 +55,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", height: "82px", background: mode === "dark" ? "#3333" : "white", zIndex: 100 }}>
+    <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", height: "82px", background: mode === "dark" ? "#3333" : "rgba(255, 255, 255, 0.5)", zIndex: 100 }}>
       <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative z-10'>
 
         <button className='absolute left-6 flex-col justify-center items-center hidden lg:hidden md:block sm:block xs:block' onClick={handleClick}>
