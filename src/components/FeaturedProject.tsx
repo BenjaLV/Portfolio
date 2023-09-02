@@ -15,15 +15,18 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
     return (
         <article className="relative mb-8 md:mb-16">
             <Link href={link} target={'_blank'}>
-                <Image
-                    src={img}
-                    alt={title}
-                    width={400}
-                    height={300}
-                    className={`w-full h-auto ${isHovered ? 'opacity-75' : ''}`}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                />
+                <div className="relative w-full h-auto">
+                    <Image
+                        src={img}
+                        alt={title}
+                        layout="responsive"
+                        width={400}
+                        height={300}
+                        className={`w-full h-auto sm:w-[75%] xs:w-[50%] mx-auto ${isHovered ? 'scale-95' : 'scale-100'} transition-transform duration-300`}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    />
+                </div>
             </Link>
 
             <Link href={link} target={'_blank'}>

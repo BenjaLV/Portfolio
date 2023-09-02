@@ -31,9 +31,9 @@ const About = () => {
     return (
         <Layout className='pt-1'>
             <main id='about' className='flex w-full flex-col items-center justify-center dark:text-ligth' style={{ paddingTop: "100px" }}>
-                <AnimatedText text='Passion Fuels Purpose' className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
-                <div className='grid w-full grid-cols-8 gap-16 '>
-                    <div className='col-span-3 flex flex-col items-center justify-start xl:col-span-4 md:order-2 md:col-span-7 md:ml-6'>
+                <AnimatedText text='Passion Fuels Purpose' className='mb-16 lg:text-7xl sm:text-6xl xs:text-4xl sm:mb-8' />
+                <div className='grid w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-16 '>
+                    <div className='md:col-span-2 xl:col-span-1 flex flex-col items-center justify-start'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-ligth/75'>Biography</h2>
                         <p className='font-medium'>
                             I am a passionate and dedicated full-stack developer with a love for creating innovative web applications that bring ideas to life. My journey in the world of programming began when I discovered my fascination with technology and its ability to transform concepts into reality.
@@ -45,8 +45,8 @@ const About = () => {
                             When I'm not coding, you can find me exploring new technologies, working on personal projects, and collaborating with fellow developers. My mission is to continue growing and contributing to the tech community while pushing the boundaries of what's possible in web development.
                         </p>
                     </div>
-                    <div className='col-span-4 flex justify-center items-center xl:col-span-4 md:order-1 md:col-span-7'>
-                        <div style={{ marginLeft: '20px' }}>
+                    <div className='md:col-span-2 xl:col-span-2 flex justify-center items-center'>
+                        <div className='w-full md:w-2/3 lg:w-3/4 xl:w-4/5'>
                             <Image
                                 src={aboutPicture}
                                 alt='about-image'
@@ -55,6 +55,7 @@ const About = () => {
                                 style={imageStyle}
                                 ref={ref}
                                 priority
+                                className='sm:w-3/4 xs:w-1/2 mx-auto'
                             />
                         </div>
                     </div>
