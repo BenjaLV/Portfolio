@@ -56,9 +56,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", height: "82px", background: mode === "dark" ? "#3333" : "white", zIndex: 100 }}>
-      <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative z-10 lg:px-16 md:px-12 sm:px-8'>
+      <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative z-10'>
 
-        <button className='flex-col justify-center items-center hidden lg:hidden md:block sm:block xs:block' onClick={handleClick}>
+        <button className='absolute left-6 flex-col justify-center items-center hidden lg:hidden md:block sm:block xs:block' onClick={handleClick}>
           <span className={`bg-dark dark:bg-ligth block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
           <span className={`bg-dark dark:bg-ligth block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
           <span className={`bg-dark dark:bg-ligth block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
