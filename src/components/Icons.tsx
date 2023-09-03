@@ -3,6 +3,12 @@ import { SVGProps } from "react"
 
 type IconProps = { size?: number } & SVGProps<SVGSVGElement>
 
+declare namespace JSX {
+    interface IntrinsicElements {
+        set: any;
+    }
+}
+
 export const GitHubIcon = ({ className, mode, ...rest }: SVGProps<SVGSVGElement> & { mode: string }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
