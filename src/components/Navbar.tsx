@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import Logo from './Logo';
-import { GitHubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons';
+import { FullStackDeveloperIcon, GitHubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons';
 import { motion } from 'framer-motion';
 import UseThemeSwitcher from './hooks/UseThemeSwitcher';
 
@@ -100,7 +100,7 @@ const Navbar = () => {
 
             <motion.div
               initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-              animate={{ scale: 1, opacity: 1, transition:{2:2} }}
+              animate={{ scale: 1, opacity: 1, transition: { 2: 2 } }}
               className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 bg-dark/60 dark:bg-ligth/75 rounded-lg backdrop-blur-md py-32'>
               <nav className='flex items-center flex-col justify-center'>
                 <NavigationMobileLink href="#home" text="Home" mode={mode} toggle={handleClick} />
@@ -140,6 +140,10 @@ const Navbar = () => {
         <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
           <Logo />
         </div>
+        <div className='xl:hidden lg:hidden absolute right-2 top-2 w-16 h-auto'>
+          <FullStackDeveloperIcon className='animate-spin-slow fill-dark dark:fill-ligth' />
+        </div>
+
       </header>
     </div>
   );
