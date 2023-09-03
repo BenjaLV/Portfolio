@@ -42,7 +42,7 @@ const About = () => {
                             Throughout my career, I have honed my skills in both front-end and back-end development, allowing me to craft seamless user experiences while ensuring robust functionality behind the scenes. I thrive on challenges and have a proven track record of turning complex problems into elegant solutions.
                         </p>
                         <p className='font-medium'>
-                            When I'm not coding, you can find me exploring new technologies, working on personal projects, and collaborating with fellow developers. My mission is to continue growing and contributing to the tech community while pushing the boundaries of what's possible in web development.
+                            When I&apos;m not coding, you can find me exploring new technologies, working on personal projects, and collaborating with fellow developers. My mission is to continue growing and contributing to the tech community while pushing the boundaries of what&apos;s possible in web development.
                         </p>
                     </div>
                     <div className='md:col-span-2 xl:col-span-2 flex justify-center items-center'>
