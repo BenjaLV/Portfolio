@@ -37,9 +37,9 @@ const config: Config = {
         circularDarkMd:
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 6px, #1b1b1b 60px);",
         circularLigthSm:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 40px);",
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 50px);",
         circularDarkSm:
-          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 4px, #1b1b1b 40px);",
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 4px, #1b1b1b 50px);",
       },
     },
     screens: {
@@ -47,7 +47,7 @@ const config: Config = {
       sm: { min: "640px", max: "767px" },
       md: { min: "768px", max: "1023px" },
       lg: { min: "1024px", max: "1279px" },
-      xl: { min: "1280px", max: "1535px" },
+      xl: { min: "1280px", max: "2001px" },
       "2xl": { min: "1536px" },
     },
   },

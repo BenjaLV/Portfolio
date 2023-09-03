@@ -39,12 +39,12 @@ export default function Main() {
             <Image src={profilePicture} alt="BenjaLaValla" className="w-4/5 h-auto rounded-full mx-auto md:inline-block md:w-full" style={{ overflow: "hidden", border: 2, zIndex: 0 }} priority />
           </div>
         </div>
-        <div className="w-1/2 flex flex-col items-center self-center pl-8 lg:flex-col sm:w-full xs:w-full sm:text-center xs:text-center">
+        <div className="w-1/2 flex flex-col items-center self-center pl-8 lg:flex-col sm:w-full xs:w-full sm:text-center xs:!pl-5">
           <AnimatedText text="Turning Vision into Reality: Full Stack Development into Action." className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-2xl xs:!text-2xl" />
-          <p className="my-4 text-base font-medium">
+          <p className="my-4 text-base font-medium xs:!pl-2">
             As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my work and experience.
           </p>
-          <div className="flex items-center self-start mt-2 lg:self-center sm:ml-52 sm:flex-row xs:ml-32 xs:flex-col">
+          <div className="flex items-center self-start mt-2 lg:self-center sm:px-36 sm:flex-row xs:px-16 xs:p-1 xs:flex-col">
             <Link href="#" onClick={handleDownload} className="flex items-center bg-dark text-ligth p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-ligth hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-ligth dark:text-dark hover:dark:bg-dark hover:dark:text-ligth hover:dark:border-ligth">
               CV<ExternalLink className="w-6 ml-1" />
             </Link>

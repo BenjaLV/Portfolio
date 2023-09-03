@@ -117,7 +117,7 @@ const Navbar = () => {
                   whileTap={{ scale: 0.9 }}
                   className='sm:mx-1'
                 >
-                  <GitHubIcon className='w-6 h-6 bg-ligth dark:bg-dark rounded-full' mode={mode} />
+                  <GitHubIcon className='!w-6 !h-6 bg-ligth dark:bg-dark rounded-full' mode={mode} />
                 </motion.a>
                 <motion.a
                   href="https://www.linkedin.com/in/benjam%C3%ADn-la-valla-826ba7245"
@@ -126,7 +126,7 @@ const Navbar = () => {
                   whileTap={{ scale: 0.9 }}
                   className='sm:mx-1'
                 >
-                  <LinkedInIcon className='w-6 h-6' />
+                  <LinkedInIcon className='!w-6 !h-6' />
                 </motion.a>
                 <button onClick={toggleTheme} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "ligth" ? "bg-dark text-ligth" : "bg-ligth text-dark w-6 h-6"}`}>
                   {mode === 'dark' ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
