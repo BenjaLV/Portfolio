@@ -8,7 +8,7 @@ const Projects = () => {
         <Layout className="pt-16">
             <main id='projects' className="w-full mb-16 flex flex-col items-center justify-center mt-12">
                 <div className="mb-8">
-                    <AnimatedText text="Imagination Trumps Knowledge!" className='lg:text-7xl md:text-6xl sm:text-4xl xs:text-3xl' />
+                    <AnimatedText text="Coding Chronicles: Full Stack Feats!" className='lg:text-7xl md:text-6xl sm:text-4xl xs:text-3xl' />
                 </div>
                 <div className="grid grid-cols-12 gap-10 md:gap-12 sm:gap-7 xs:gap-6">
                     <div className="col-span-12 md:col-span-6 mb-10 md:mb-0">
@@ -17,7 +17,7 @@ const Projects = () => {
                             img="/images/all-devices-ceibo.png"
                             summary="Application to manage and administer the news of the projects of each client among the users of the company"
                             link="https://github.com/BenjaLV/CEIBO-APP"
-                        
+
                         />
                     </div>
                     <div className="col-span-12 md:col-span-6 mb-10 md:mb-0" >
