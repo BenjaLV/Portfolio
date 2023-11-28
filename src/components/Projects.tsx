@@ -19,23 +19,7 @@ const Projects = () => {
                             link="https://github.com/BenjaLV/CEIBO-APP"
 
                         />
-                    </div>
-                    <div className="col-span-12 md:col-span-6 mb-10 md:mb-0" >
-                        <FeaturedProject
-                            title="PokemonApp"
-                            img="/images/pokemon-desktop-2.png"
-                            summary='Pokemon App built with NextJs, you can navigate among the 151 pokémons and select your favorites'
-                            link='https://github.com/BenjaLV/pokemonStaticApp'
-                        />
-                    </div>
-                    <div className="col-span-12 md:col-span-6 mb-10">
-                        <FeaturedProject
-                            title="MovieApp"
-                            img="/images/movie-app-all-devices.png"
-                            summary='Movies app built with React, adapted with a nextflix-like interface, consumes the TMDB api and you can add your favorite movies to your list'
-                            link='https://github.com/BenjaLV/TMDB-Client-P5'
-                        />
-                    </div>
+                    </div>    
                 </div>
             </main>
         </Layout>
