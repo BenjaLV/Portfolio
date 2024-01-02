@@ -23,7 +23,7 @@ const Projects = () => {
                             <FeaturedProject
                                 title="Model-Portfile"
                                 img="/images/model-porfolio-img.png"
-                                summary="A modern and minimalist portfolio built with Next Js"
+                                summary="A modern and minimalist modeling portfolio built with Next Js"
                                 link="https://benjalavalla-portfolio.vercel.app/"
 
                             />
