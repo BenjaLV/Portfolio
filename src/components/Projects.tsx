@@ -11,7 +11,7 @@ const Projects = () => {
                     <AnimatedText text="Coding Chronicles: Full Stack Feats!" className='lg:text-7xl md:text-6xl sm:text-4xl xs:text-3xl' />
                 </div>
                 <div className="grid grid-cols-12 gap-10 md:gap-12 sm:gap-7 xs:gap-6">
-                    <div className="col-span-12 md:col-span-6 mb-10 md:mb-0">
+                    <div className="col-span-12 md:col-span-6 mb-16 md:mb-0">
                         <FeaturedProject
                             title="CEIBO-APP"
                             img="/images/all-devices-ceibo.png"
@@ -19,7 +19,16 @@ const Projects = () => {
                             link="https://github.com/BenjaLV/CEIBO-APP"
 
                         />
-                    </div>    
+                        <div className='relative my-8'>
+                            <FeaturedProject
+                                title="Model-Portfile"
+                                img="/images/model-porfolio-img.png"
+                                summary="A modern and minimalist portfolio built with Next Js"
+                                link="https://benjalavalla-portfolio.vercel.app/"
+
+                            />
+                        </div>
+                    </div>
                 </div>
             </main>
         </Layout>
