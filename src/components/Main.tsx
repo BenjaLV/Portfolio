@@ -44,7 +44,7 @@ export default function Main() {
           <p className="my-4 text-base font-medium xs:!pl-2">
             As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my work and experience.
           </p>
-          <div className="flex items-center self-start mt-2 lg:self-center sm:px-36 sm:flex-row xs:px-16 xs:p-1 xs:flex-col">
+          <div className="flex items-center mt-2 lg:self-center sm:px-36 sm:flex-row xs:px-16 xs:p-1 xs:flex-col">
             <Link href="#" onClick={handleDownload} className="flex items-center bg-dark text-ligth p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-ligth hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-ligth dark:text-dark hover:dark:bg-dark hover:dark:text-ligth hover:dark:border-ligth">
               CV<ExternalLink className="w-6 ml-1" />
             </Link>

@@ -22,7 +22,7 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
                         layout="responsive"
                         width={400}
                         height={300}
-                        className={`w-full h-auto sm:w-[75%] xs:w-[50%] mx-auto ${isHovered ? 'scale-95' : 'scale-100'} transition-transform duration-300`}
+                        className={`w-full h-auto mx-auto ${isHovered ? 'scale-95' : 'scale-100'} transition-transform duration-300`}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     />
@@ -35,7 +35,7 @@ const FeauturedProject = ({ title, summary, img, link }: Props) => {
                 </div>
             </Link>
             <div className="absolute inset-x-0 bottom-[-1] flex items-center justify-center w-full md:mt-2">
-                <h2 className="text-lg font-bold text-black dark:text-ligth">{title}</h2>
+                <h2 className="text-lg font-bold text-black dark:text-ligth p-3">{title}</h2>
             </div>
         </article>
     );
